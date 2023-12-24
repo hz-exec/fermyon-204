@@ -1,0 +1,11 @@
+### LOCAL
+GET http://127.0.0.1:3000/generate_204
+
+### fermyon
+GET https://fermyon204-pmbqdram.fermyon.app/generate_204
+
+### GOOGLE
+GET https://www.gstatic.com/generate_204
+
+
+

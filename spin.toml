@@ -1,0 +1,18 @@
+spin_manifest_version = 2
+
+[application]
+name = "fermyon204"
+version = "0.1.0"
+authors = ["Hongjing Zhou <hongjing.zhou@qq.com>"]
+description = ""
+
+[[trigger.http]]
+route = "/generate_204"
+component = "fermyon204"
+
+[component.fermyon204]
+source = "target/wasm32-wasi/release/fermyon204.wasm"
+allowed_outbound_hosts = []
+[component.fermyon204.build]
+command = "cargo build --target wasm32-wasi --release"
+watch = ["src/**/*.rs", "Cargo.toml"]
